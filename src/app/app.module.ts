@@ -8,6 +8,8 @@ import { HomeComponent } from './components/home/home.component';
 import { FormComponent } from './components/form/form.component';
 import { TermosComponent } from './components/termos/termos.component';
 import { NavbardownComponent } from './components/navbardown/navbardown.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { NavbardownComponent } from './components/navbardown/navbardown.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
