@@ -2,7 +2,7 @@
     <div class="uk-container">
         <div uk-navbar>
             <a href="" class="uk-navbar-item uk-logo uk-visible@l"><img src="assets/ardor.png" alt=""></a>
-            <div class="uk-navbar-center uk-visible@m">
+            <div class="uk-navbar-center uk-visible@l">
                 <ul class="uk-navbar-nav" >
                     <li><a href="#">sobre nós</a></li>
                     <li><a href="#oquevaiapender">o que vai aprender</a></li>
@@ -10,20 +10,21 @@
             </div>
 
             <div class="uk-navbar-right">
-                <button class="uk-button uk-button-primary uk-border-rounded" routerLink="/form">Solicitar</button>
+                <button class="uk-button uk-button-primary uk-border-rounded uk-visible@l" routerLink="/form">Solicitar</button>
             </div>
         </div>
-
-        <a href="" class="uk-navbar-toggle uk-hidden@l" uk-toggle="target: #offcanvas"  data-uk-navbar-toggle-icon></a>
+        <a href="" class="uk-logo uk-visible@m uk-visible@s uk-hidden@l uk-margin-large-top"><img src="assets/ardor.png" alt=""></a>
+        <a href="" class="uk-navbar-toggle uk-hidden@l uk-align-right uk-margin-large-top" uk-toggle="target: #offcanvas"  data-uk-navbar-toggle-icon></a>
     </div>
 </nav>
 
 <a href=""  uk-toggle></a>
-<div id="offcanvas" uk-offcanvas>
-    <div class="uk-offcanvas-bar">
-        <ul class="uk-navbar-nav">
+<div id="offcanvas" uk-offcanvas >
+    <div class="uk-offcanvas-bar ">
+        <ul>
             <li><a href="#">sbre nós</a></li>
             <li><a href="#">o que vai aprender</a></li>
         </ul>
+        <button class="uk-button uk-button-primary uk-border-rounded" routerLink="/form">Solicitar</button>
     </div>
 </div>
